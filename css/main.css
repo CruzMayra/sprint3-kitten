@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#view-two,
+#view-three {
+  display: none;
+}
+
+[alt*="scene-"] {
+  width: 100%;
+  height: 100vh;
+}
+
+[alt*="kitten-"] {
+  position: absolute;
+  bottom: 0%;
+  right: 20%;
+  left: 20%;
+  width: 60%;
+}
+
+[alt*="kitten-small"] {
+  /* bottom: -100%; */
+  width: 30%;
+  right: 35%;
+  left: 35%;
+}
+
+[alt*="kitten-medium"] {
+  /* bottom: -200%; */
+  width: 40%;
+  right: 30%;
+  left: 30%;
+}
+
+@media only screen and (max-width:900px) {
+  #view-one,
+  #view-three {
+    display: none;
+  }
+
+  #view-two {
+    display: block;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  #view-one,
+  #view-two {
+    display: none;
+  }
+
+  #view-three {
+    display: block;
+  }
+}
